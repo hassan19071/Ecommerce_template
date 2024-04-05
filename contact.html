@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | eCommerce</title>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>   
+
+    <div class="main-overlay position-fixed">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <header>
+        <div class="head-top py-2 d-none d-md-block bg-light">
+            <div class="container px-lg-5">
+                <div class="content d-flex align-items-center justify-content-between">
+                   <div class="personal-links">
+                    <ul class="list-unstyled d-flex align-items-center">
+                        <li class="me-2"><a href="#">About Us</a></li>
+                        <li class="mx-2"><a href="#">Privacy</a></li>
+                        <li class="mx-2"><a href="#">FAQs</a></li>
+                        <li class="ms-2"><a href="#">Careers</a></li>
+                    </ul>
+                   </div>
+                   <div class="other-links">
+                    <ul class="list-unstyled d-flex align-items-center">
+                        <li class="me-4 wish"><a href="#">My Wishlist</a></li>
+                        <li class="mx-4 order"><a href="#">Track Your Order</a></li>
+                        <li class="ms-4 me-2"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="mx-2"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="mx-2"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li class="ms-2"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar bg-light position-relative w-100">
+            <div class="container px-lg-5">
+                <div class="nav-container d-flex align-items-center justify-content-between w-100">
+                    <div class="logo">
+                        <a href="home.html"><img src="imgs/logo.png.webp" alt="logo"></a>
+                    </div>
+                    <div class="site-links d-lg-block d-none">
+                        <ul class="list-unstyled d-flex align-items-center m-0">
+                            <li><a href="home.html" class="px-3 py-4">Home</a></li>
+                            <li><a href="category.html" class="px-3 py-4">Men</a></li>
+                            <li><a href="category.html" class="px-3 py-4">Women</a></li>
+                            <li><a href="category.html" class="px-3 py-4 baby position-relative">Baby Collection <span class="position-absolute">New</span></a></li>
+                            <li class="position-relative pages">
+                                <a href="#" class="px-3 py-4">Pages <i class="fa-solid fa-angle-down ms-1"></i></a>
+                                <div class="downs cart position-absolute">
+                                    <ul class="m-0 list-unstyled w-100">
+                                        <li><a href="login.html" class="py-1 d-inline-block">Login</a></li>
+                                        <li><a href="cart.html" class="py-1 d-inline-block">Cart</a></li>
+                                        <li><a href="product_details.html" class="py-1 d-inline-block">Product details</a></li>
+                                        <li><a href="checkout.html" class="py-1 d-inline-block">Product Checkout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="position-relative blog">
+                                <a href="#" class="px-3 py-4 blog">Blog</a>
+                                <div class="downs blog position-absolute">
+                                    <ul class="m-0 list-unstyled w-100">
+                                        <li><a href="blog.html" class="py-1 d-inline-block">Blog</a></li>
+                                        <li><a href="blog_details.html" class="py-1 d-inline-block">Blog Details</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="contact.html" class="px-3 py-4">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="icons-links">
+                        <ul class="m-0 d-flex align-items-center list-unstyled">
+                            <li><a class="py-3 px-2 search" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><a href="login.html" class="py-3 px-2"><i class="fa-regular fa-user"></i></a></li>
+                            <li class="position-relative cart">
+                                <a href="cart.html" class="py-3 px-2"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <span class="position-absolute">5</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-container position-absolute" id="search-bar">
+                    <div class="container px-lg-5">
+                        <form action="" class="position-relative">
+                            <input type="search" name="searchFiled" class="w-100" placeholder="search here">
+                            <div class="x position-absolute"><i class="fa-solid fa-x"></i></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="discount d-none d-lg-block bg-dark">
+            <div class="container text-center">
+              <p class="text-white">Sale Up To 50% Biggest Discounts. Hurry! Limited Perriod Offer. <a href="#">Shop Now</a></p>
+            </div>
+        </div>
+        <div class="menu d-lg-none position-relative">
+            <div class="container">
+                <div class="icon ms-auto">
+                    Menu <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="mobile-links w-100 position-absolute">
+                <div class="container">
+                    <ul class="m-0 list-unstyled py-3">
+                        <li><a href="home.html" class="py-1 d-inline-block">Home</a></li>
+                        <li><a href="category.html" class="py-1 d-inline-block">Men</a></li>
+                        <li><a href="category.html" class="py-1 d-inline-block">Women</a></li>
+                        <li><a href="category.html" class="py-1 d-inline-block">Baby Collection</a></li>
+                        <li><a href="product_details.html" class="py-1 d-inline-block">Product details</a></li>
+                        <li><a href="checkout.html" class="py-1 d-inline-block">Product Checkout</a></li>
+                        <li><a href="blog.html" class="py-1 d-inline-block">Blog</a></li>
+                        <li><a href="blog_details.html" class="py-1 d-inline-block">Blog Details</a></li>
+                        <li><a href="contact.html" class="py-1 d-inline-block">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hero-title position-relative py-5">
+            <div class="container text-center">
+               <h3>Contact</h3>
+               <div class="links mt-3">
+                <a href="home.html">Home</a> |
+                <a>Contact</a>
+               </div>
+            </div>
+        </div>
+    </header>
+    <div class="contact py-5">
+        <div class="container px-lg-5">
+            <div class="map">
+                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d51578.71185876204!2d31.309389035264896!3d30.06514444261161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sar!2seg!4v1711929012663!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="form mt-5">
+               <div class="row">
+                <div class="col-lg-8">
+                    <h4>Get in Touch</h4>
+                   <form action="">
+                    <div class="row g-3 mt-4">
+                        <div class="col-12">
+                          <textarea name="message" id="message" class="w-100" rows="6" placeholder="Enter message"></textarea>
+                        </div>
+                        <div class="col-md-6">
+                          <input type="text" class="form-control" placeholder="Enter your name" aria-label="name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Enter your email" aria-label="email">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" class="form-control" placeholder="Enter subject" aria-label="subject">
+                        </div>
+                        <button>Send</button>
+                    </div>
+                   </form>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+    <footer class="py-4">
+        <div class="container py-lg-3">
+           <div class="top-footer">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="text">
+                        <h5>Subscribe Newsletter</h5>
+                        <p>Subscribe newsletter to get 5% on all products.</p>
+                    </div>
+                </div>
+                <div class="col-md-5 mt-3">
+                   <form action="" class="d-flex align-items-center">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                   </form>
+                </div>
+                <div class="col-lg-3 mt-3">
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div class="footer-links">
+            <div class="row">
+                <div class="col-lg-3 col-md-8 mt-3">
+                    <div class="logo">
+                        <a href="home.html"><img src="imgs/logo2_footer.png.webp" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-3">
+                    <div class="shop">
+                        <h6>Shop Men</h6>
+                        <ul class="list-unstyled mt-3">
+                            <li><a href="#">Clothing Fashion</a></li>
+                            <li class="mt-2"><a href="#">Winter</a></li>
+                            <li class="mt-2"><a href="#">Summer</a></li>
+                            <li class="mt-2"><a href="#">Formal</a></li>
+                            <li class="mt-2"><a href="#">Casual</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-3">
+                    <div class="shop">
+                        <h6>Shop Women</h6>
+                        <ul class="list-unstyled mt-3">
+                            <li><a href="#">Clothing Fashion</a></li>
+                            <li class="mt-2"><a href="#">Winter</a></li>
+                            <li class="mt-2"><a href="#">Summer</a></li>
+                            <li class="mt-2"><a href="#">Formal</a></li>
+                            <li class="mt-2"><a href="#">Casual</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-3">
+                    <div class="shop">
+                        <h6>Baby Collection</h6>
+                        <ul class="list-unstyled mt-3">
+                            <li><a href="#">Clothing Fashion</a></li>
+                            <li class="mt-2"><a href="#">Winter</a></li>
+                            <li class="mt-2"><a href="#">Summer</a></li>
+                            <li class="mt-2"><a href="#">Formal</a></li>
+                            <li class="mt-2"><a href="#">Casual</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-3">
+                    <div class="shop">
+                        <h6>Quick Links</h6>
+                        <ul class="list-unstyled mt-3">
+                            <li><a href="#">Track Your Order</a></li>
+                            <li class="mt-2"><a href="#">Support</a></li>
+                            <li class="mt-2"><a href="#">FAQ</a></li>
+                            <li class="mt-2"><a href="#">Carrier</a></li>
+                            <li class="mt-2"><a href="#">About</a></li>
+                            <li class="mt-2"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div class="foot text-center pt-4">
+            Copyright &copy;2024 All rights reserved | This template is made with  by <a href="#">Hassan</a>
+           </div>
+        </div>
+    </footer>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

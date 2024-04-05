@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | eCommerce</title>
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>   
+
+    <div class="main-overlay position-fixed">
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <header>
+        <div class="head-top py-2 d-none d-md-block bg-light">
+            <div class="container px-lg-5">
+                <div class="content d-flex align-items-center justify-content-between">
+                   <div class="personal-links">
+                    <ul class="list-unstyled d-flex align-items-center">
+                        <li class="me-2"><a href="#">About Us</a></li>
+                        <li class="mx-2"><a href="#">Privacy</a></li>
+                        <li class="mx-2"><a href="#">FAQs</a></li>
+                        <li class="ms-2"><a href="#">Careers</a></li>
+                    </ul>
+                   </div>
+                   <div class="other-links">
+                    <ul class="list-unstyled d-flex align-items-center">
+                        <li class="me-4 wish"><a href="#">My Wishlist</a></li>
+                        <li class="mx-4 order"><a href="#">Track Your Order</a></li>
+                        <li class="ms-4 me-2"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="mx-2"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li class="mx-2"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li class="ms-2"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar bg-light position-relative w-100">
+            <div class="container px-lg-5">
+                <div class="nav-container d-flex align-items-center justify-content-between w-100">
+                    <div class="logo">
+                        <a href="home.html"><img src="imgs/logo.png.webp" alt="logo"></a>
+                    </div>
+                    <div class="site-links d-lg-block d-none">
+                        <ul class="list-unstyled d-flex align-items-center m-0">
+                            <li><a href="home.html" class="px-3 py-4">Home</a></li>
+                            <li><a href="category.html" class="px-3 py-4">Men</a></li>
+                            <li><a href="category.html" class="px-3 py-4">Women</a></li>
+                            <li><a href="category.html" class="px-3 py-4 baby position-relative">Baby Collection <span class="position-absolute">New</span></a></li>
+                            <li class="position-relative pages">
+                                <a href="#" class="px-3 py-4">Pages <i class="fa-solid fa-angle-down ms-1"></i></a>
+                                <div class="downs cart position-absolute">
+                                    <ul class="m-0 list-unstyled w-100">
+                                        <li><a href="login.html" class="py-1 d-inline-block">Login</a></li>
+                                        <li><a href="cart.html" class="py-1 d-inline-block">Cart</a></li>
+                                        <li><a href="product_details.html" class="py-1 d-inline-block">Product details</a></li>
+                                        <li><a href="checkout.html" class="py-1 d-inline-block">Product Checkout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="position-relative blog">
+                                <a href="#" class="px-3 py-4 blog">Blog</a>
+                                <div class="downs blog position-absolute">
+                                    <ul class="m-0 list-unstyled w-100">
+                                        <li><a href="blog.html" class="py-1 d-inline-block">Blog</a></li>
+                                        <li><a href="blog_details.html" class="py-1 d-inline-block">Blog Details</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="contact.html" class="px-3 py-4">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="icons-links">
+                        <ul class="m-0 d-flex align-items-center list-unstyled">
+                            <li><a class="py-3 px-2 search" id="search-icon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                            <li><a href="login.html" class="py-3 px-2"><i class="fa-regular fa-user"></i></a></li>
+                            <li class="position-relative cart">
+                                <a href="cart.html" class="py-3 px-2"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <span class="position-absolute">5</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search-container position-absolute" id="search-bar">
+                    <div class="container px-lg-5">
+                        <form action="" class="position-relative">
+                            <input type="search" name="searchFiled" class="w-100" placeholder="search here">
+                            <div class="x position-absolute"><i class="fa-solid fa-x"></i></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="discount d-none d-lg-block bg-dark">
+            <div class="container text-center">
+              <p class="text-white">Sale Up To 50% Biggest Discounts. Hurry! Limited Perriod Offer. <a href="#">Shop Now</a></p>
+            </div>
+        </div>
+        <div class="menu d-lg-none position-relative">
+            <div class="container">
+                <div class="icon ms-auto">
+                    Menu <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <div class="mobile-links w-100 position-absolute">
+                <div class="container">
+                    <ul class="m-0 list-unstyled py-3">
+                        <li><a href="home.html" class="py-1 d-inline-block">Home</a></li>
+                        <li><a href="category.html" class="py-1 d-inline-block">Men</a></li>
+                        <li><a href="category.html" class="py-1 d-inline-block">Women</a></li>
+                        <li><a href="category.html" class="py-1 d-inline-block">Baby Collection</a></li>
+                        <li><a href="product_details.html" class="py-1 d-inline-block">Product details</a></li>
+                        <li><a href="checkout.html" class="py-1 d-inline-block">Product Checkout</a></li>
+                        <li><a href="blog.html" class="py-1 d-inline-block">Blog</a></li>
+                        <li><a href="blog_details.html" class="py-1 d-inline-block">Blog Details</a></li>
+                        <li><a href="contact.html" class="py-1 d-inline-block">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="hero-title position-relative py-5">
+            <div class="container text-center">
+               <h3>Category</h3>
+               <div class="links mt-3">
+                <a href="home.html">Home</a> |
+                <a>Category</a>
+               </div>
+            </div>
+        </div>
+    </header>
+   <div class="filtring-products py-5">
+    <div class="container px-lg-5">
+        <div class="row py-lg-3">
+            <div class="col-md-4 col-lg-4 col-xl-3 mb-md-0 mb-3">
+                <div class="filter">
+                    <div class="selects">
+                        <div class="category-select custom-select w-100">
+                            <select name="category" id="category">
+                                <option value="category">Category</option>
+                                <option value="category1">Category 1</option>
+                                <option value="category2">Category 2</option>
+                                <option value="category3">Category 3</option>
+                                <option value="category4">Category 4</option>
+                                <option value="category5">Category 5</option>
+                            </select>
+                        </div>
+                        <div class="type-select custom-select w-100">
+                            <select name="type" id="type">
+                                <option value="type">Type</option>
+                                <option value="type 1">Type 1</option>
+                                <option value="type 2">Type 2</option>
+                                <option value="type 3">Type 3</option>
+                                <option value="type 4">Type 4</option>
+                                <option value="type 5">Type 5</option>
+                            </select>
+                        </div>
+                        <div class="size-select custom-select w-100">
+                            <select name="size" id="size">
+                                <option value="size">Size</option>
+                                <option value="xxl">XXL</option>
+                                <option value="xl">XL</option>
+                                <option value="lg">LG</option>
+                                <option value="m">M</option>
+                                <option value="s">S</option>
+                            </select>
+                        </div>
+                        <div class="color-select custom-select w-100">
+                            <select name="color" id="color">
+                                <option value="color">Color</option>
+                                <option value="blue">Blue</option>
+                                <option value="red">Red</option>
+                                <option value="white">White</option>
+                                <option value="black">Black</option>
+                                <option value="brown">Brown</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="price my-5">
+                        <h6>Filter By Price</h6>
+                        <div class="wrapper">
+                            <div class="price-input">
+                              <div class="field">
+                                <span>Min</span>
+                                <input type="number" class="input-min" value="2500">
+                              </div>
+                              <div class="separator"></div>
+                              <div class="field">
+                                <span>Max</span>
+                                <input type="number" class="input-max" value="7500">
+                              </div>
+                            </div>
+                            <div class="slider">
+                              <div class="progress"></div>
+                            </div>
+                            <div class="range-input">
+                              <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                              <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                            </div>
+                          </div>
+                    </div>
+                    <div class="genres">
+                        <h6>Filter By Genres</h6>
+                        <label class="container-checkbox">History
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          </label>
+                          
+                          <label class="container-checkbox">Horror - Thriller
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          
+                          <label class="container-checkbox">Love Stories
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          
+                          <label class="container-checkbox">Science Fiction
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="container-checkbox">Biography
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                    </div>
+                    <div class="brand mt-5">
+                        <h6>Filter By Brand</h6>
+                        <label class="container-checkbox">Zara
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                          
+                          <label class="container-checkbox">H & M
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          
+                          <label class="container-checkbox">American Eagle
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          
+                          <label class="container-checkbox">Shein
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                          <label class="container-checkbox">Rolex
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                          </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9 col-md-8">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product text-center position-relative">
+                            <div class="icons position-absolute">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            </div>
+                            <div class="img">
+                                <img src="/imgs/may2.webp" alt="trend">
+                            </div>
+                            <div class="text py-3">
+                                <p class="mb-2">Cashmere Tank + Bag</p>
+                                <div class="price">
+                                    <span>$98.00</span>
+                                    <del>$120.00</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product text-center position-relative">
+                            <div class="icons position-absolute">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            </div>
+                            <div class="img">
+                                <img src="/imgs/trend4.webp" alt="trend">
+                            </div>
+                            <div class="text py-3">
+                                <p class="mb-2">Cashmere Tank + Bag</p>
+                                <div class="price">
+                                    <span>$98.00</span>
+                                    <del>$120.00</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product text-center position-relative">
+                            <div class="icons position-absolute">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            </div>
+                            <div class="img">
+                                <img src="/imgs/may4.webp" alt="trend">
+                            </div>
+                            <div class="text py-3">
+                                <p class="mb-2">Cashmere Tank + Bag</p>
+                                <div class="price">
+                                    <span>$98.00</span>
+                                    <del>$120.00</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product text-center position-relative">
+                            <div class="icons position-absolute">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            </div>
+                            <div class="img">
+                                <img src="/imgs/trend3.webp" alt="trend">
+                            </div>
+                            <div class="text py-3">
+                                <p class="mb-2">Cashmere Tank + Bag</p>
+                                <div class="price">
+                                    <span>$98.00</span>
+                                    <del>$120.00</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product text-center position-relative">
+                            <div class="icons position-absolute">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            </div>
+                            <div class="img">
+                                <img src="/imgs/may3.webp" alt="trend">
+                            </div>
+                            <div class="text py-3">
+                                <p class="mb-2">Cashmere Tank + Bag</p>
+                                <div class="price">
+                                    <span>$98.00</span>
+                                    <del>$120.00</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product text-center position-relative">
+                            <div class="icons position-absolute">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            </div>
+                            <div class="img">
+                                <img src="/imgs/trend2.webp" alt="trend">
+                            </div>
+                            <div class="text py-3">
+                                <p class="mb-2">Cashmere Tank + Bag</p>
+                                <div class="price">
+                                    <span>$98.00</span>
+                                    <del>$120.00</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product text-center position-relative">
+                            <div class="icons position-absolute">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            </div>
+                            <div class="img">
+                                <img src="/imgs/may2.webp" alt="trend">
+                            </div>
+                            <div class="text py-3">
+                                <p class="mb-2">Cashmere Tank + Bag</p>
+                                <div class="price">
+                                    <span>$98.00</span>
+                                    <del>$120.00</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product text-center position-relative">
+                            <div class="icons position-absolute">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            </div>
+                            <div class="img">
+                                <img src="/imgs/trend1.webp" alt="trend">
+                            </div>
+                            <div class="text py-3">
+                                <p class="mb-2">Cashmere Tank + Bag</p>
+                                <div class="price">
+                                    <span>$98.00</span>
+                                    <del>$120.00</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="product text-center position-relative">
+                            <div class="icons position-absolute">
+                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <a href="#"><i class="fa-solid fa-heart"></i></a>
+                                <a href="#"><i class="fa-solid fa-magnifying-glass-plus"></i></a>
+                            </div>
+                            <div class="img">
+                                <img src="/imgs/may1.webp" alt="trend">
+                            </div>
+                            <div class="text py-3">
+                                <p class="mb-2">Cashmere Tank + Bag</p>
+                                <div class="price">
+                                    <span>$98.00</span>
+                                    <del>$120.00</del>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+    <footer class="py-4">
+        <div class="container py-lg-3">
+           <div class="top-footer">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="text">
+                        <h5>Subscribe Newsletter</h5>
+                        <p>Subscribe newsletter to get 5% on all products.</p>
+                    </div>
+                </div>
+                <div class="col-md-5 mt-3">
+                   <form action="" class="d-flex align-items-center">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                   </form>
+                </div>
+                <div class="col-lg-3 mt-3">
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div class="footer-links">
+            <div class="row">
+                <div class="col-lg-3 col-md-8 mt-3">
+                    <div class="logo">
+                        <a href="home.html"><img src="imgs/logo2_footer.png.webp" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-3">
+                    <div class="shop">
+                        <h6>Shop Men</h6>
+                        <ul class="list-unstyled mt-3">
+                            <li><a href="#">Clothing Fashion</a></li>
+                            <li class="mt-2"><a href="#">Winter</a></li>
+                            <li class="mt-2"><a href="#">Summer</a></li>
+                            <li class="mt-2"><a href="#">Formal</a></li>
+                            <li class="mt-2"><a href="#">Casual</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-3">
+                    <div class="shop">
+                        <h6>Shop Women</h6>
+                        <ul class="list-unstyled mt-3">
+                            <li><a href="#">Clothing Fashion</a></li>
+                            <li class="mt-2"><a href="#">Winter</a></li>
+                            <li class="mt-2"><a href="#">Summer</a></li>
+                            <li class="mt-2"><a href="#">Formal</a></li>
+                            <li class="mt-2"><a href="#">Casual</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-3">
+                    <div class="shop">
+                        <h6>Baby Collection</h6>
+                        <ul class="list-unstyled mt-3">
+                            <li><a href="#">Clothing Fashion</a></li>
+                            <li class="mt-2"><a href="#">Winter</a></li>
+                            <li class="mt-2"><a href="#">Summer</a></li>
+                            <li class="mt-2"><a href="#">Formal</a></li>
+                            <li class="mt-2"><a href="#">Casual</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-3">
+                    <div class="shop">
+                        <h6>Quick Links</h6>
+                        <ul class="list-unstyled mt-3">
+                            <li><a href="#">Track Your Order</a></li>
+                            <li class="mt-2"><a href="#">Support</a></li>
+                            <li class="mt-2"><a href="#">FAQ</a></li>
+                            <li class="mt-2"><a href="#">Carrier</a></li>
+                            <li class="mt-2"><a href="#">About</a></li>
+                            <li class="mt-2"><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           </div>
+           <div class="foot text-center pt-4">
+            Copyright &copy;2024 All rights reserved | This template is made with  by <a href="#">Hassan</a>
+           </div>
+        </div>
+    </footer>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
